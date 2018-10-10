@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>OSEP - ONCOLOGICOS</title>
+	<link rel="stylesheet" type="text/css" href="style/styleonco.css">
+	<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+</head>
+<body>
+	<div class="titulo">
+		<header>
+			<h1>REGISTRO DE ONCOLOGICOS</h1>
+			<h2>OSEP CATAMARCA</h2>
+		</header>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div id="logoosep">
+					<form action="cargaonco.html" method="post"> 
+						<fieldset>
+							<legend>
+								<h3>Datos para el acceso</h3>
+							</legend>
+							<div class="dingreso">
+								<h3>Usuario:<input type="text" name="usuario" required placeholder="Ingresa tu ususario"></h3>
+								<br>
+								<h3>Contraseña:<input type="password" name="contrasena" required minlength="3"></h3>
+							</div>
+							<br>
+						</fieldset>
+						<br>
+						<div class="botones">
+							<button type="submit">INGRESAR</button>
+							<button onclick="alert('Esta saliendo del sistema'); open(location, '_self').close(); window.close()">SALIR</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

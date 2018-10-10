@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nuevo Caso</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style/styleonco1.css">
+	<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+</head>
+<body>
+	<div class="titulo">
+		<header><h1>REGISTRO DE TUMORES</h1></header>
+		<header><h2>AGREGAR NUEVO CASO / CASO INCIDENTE</h2></header>
+	</div>
+	<div> 
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="collapse navbar-collapse distri" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="cargaonco.html">Ir Pagina Principal <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="ayuda.html" target="-_blank">Ayuda</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Otros
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="http://www.osep.gob.ar/osep/">Pagina Institucional</a>
+							<a class="dropdown-item" href="#">Consultas</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="equipo.html">Powered by "Equipo A9 Sendero del Desarrollo web"</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<br>
+	<br>
+	<div>
+		<form>
+			<fieldset name="datperso">
+				<legend>
+					<h3>DATOS PERSONALES</h3>
+				</legend>
+				<div>
+					<h3>
+						<div class="vove distri">
+							<div class="item" href="busqbaseafil.html">Nº de Afiliado:
+								<input type="number" name="carnet" required placeholder="Ingresa el Nº de carnet del afiliado">
+								<button type="submit" formtarget="_blank">BUSCAR</button>
+							</div>
+							<div class="item">Nombre y Apellido:
+								<input type="text" name="nombre" required placeholder="Ingresa tu nombre y apellido">
+							</div>						
+							<div class="item">		
+								<select>
+									<h5><option value="DNI">DNI</option></h5>
+									<h5><option value="PASAPORTE">PASAPORTE</option></h5>
+									<h5><option value="L.C.">LIBRETA CIVICA</option></h5>
+								</select>
+								Nº Doc:
+								<input type="number" name="numdir" required>
+							</div>
+							<div class="item">Calle:
+								<input type="text" name="calle">
+							</div>
+							<div class="item">Nº:
+								<input type="number" name="numdir" >
+							</div>
+							<div class="item">Piso:
+								<input type="number" name="pisonum" >
+							</div>
+							<div class="item">Dpto:
+								<input type="number" name="dptonum" >
+							</div>
+							<div class="item">Localidad/Barrio:
+								<input type="text" name="localidad" placeholder="Ingresa la localidad donde vives">
+							</div>
+							<div class="item">Provincia:
+								<input type="text" name="provincia">
+							</div>
+							<div class="item">Fecha de Nacimiento:
+								<input type="date" name="fnac" required>
+							</div>
+							<div class="item">Correo Electronico:
+								<input type="email" name="email" placeholder="Ingresa tu casilla de correo electronico">
+							</div>
+							<div class="item">Genero:
+								<input type="checkbox" value="masculino">MASCULINO
+								<span class="item">
+							   	<input type="checkbox" value="femenino">FEMENINO
+								</span>
+							   	<input type="checkbox" value="otro">OTRO
+							</div>
+						</div>
+					</h3>
+				</div>
+			</fieldset>
+			<fieldset name="datdiag">
+				<legend>
+					<h3>DATOS DE DIAGNOSTICO</h3>
+				</legend>
+				<div>
+					<h3>
+						<div class="vove distri">
+							<div class="item">Fecha del Diagnostico:
+								<input type="date" name="fdiag" required>
+							</div>
+							<div class="item">Edad al Diagnostico
+						 		<input type="number" name="edadiag" required>
+						 	</div>
+						 	<div class="item">Diagnostico histologico:
+								<input type="text" name="diaghisto">
+							</div>
+							<div class="item">Estadio:
+								<input type="text" name="estadio">
+							</div>
+							<div class="item">Diagnostico de Organo:
+								<input type="text" name="diagorg">
+							</div>
+							<div class="item">
+								<label>Diagnostico en base a:</label>
+									<input type="checkbox" name="chkdiag1" value="histologia">HISTOLOGIA
+									<span class="item">
+								   	<input type="checkbox" name="chkdiag2" value="cito-hematologia">CITO-HEMATOLOGIA
+									</span>
+								   	<input type="checkbox" name="chkdiag3" value="imagenes">IMAGENES
+							</div>
+						</div> 	
+					</h3>
+				</div>
+			</fieldset>
+			<fieldset name="hc">
+				<legend>
+					<h3>RESUMEN DE HISTORIA CLINICA:</h3>
+				</legend>
+				<div>
+					<span class="item">H.C:
+							<div id="contenedor">
+    							<div id="texto" contenteditable="true"></div>
+  							</div>
+  							<input type="hidden" name="titulo" id="tituloOculto">
+					</span>
+				</div>
+			</fieldset>
+			<fieldset name="anapato">
+				<legend>
+					<h3>ANATOMIA PATOLOGICA</h3>
+				</legend>
+				<div>
+					<h3>
+						<div class="vove distri">
+							<div class="item">
+								<label>Indicar segun corresponda:</label>
+								   	<input type="checkbox" value="Neoadyuva">NEOADYUVANCIA
+								   	<span class="item">
+								   	<input type="checkbox" value="adyuva">ADYUVANCIA
+									</span>
+								   	<input type="checkbox" value="avanzado">AVANZADO
+								   	<span class="item">
+								   	<input type="checkbox" value="definiti">DEFINITIVO
+									</span>
+								   	<input type="checkbox" value="concomi">CONCOMITANTE
+							</div>
+						</div>
+					</h3>
+				</div>
+			</fieldset>
+			<fieldset name="trataprev">
+				<legend>
+					<h3>Tratamientos Previos</h3>
+				</legend>
+				<div>
+					<h3>
+						<div class="vove mas">
+							<div class="item">CIRUGIA:
+								<input type="radio" name="ciru" value="si"> SI
+								<input type="radio" name="ciru" value="no"> NO
+							</div>
+							<div class="item">Fecha de Cirugia:
+								<input type="date">
+							</div>
+							<div class="item">Tipo Cirugia:
+								<input type="text" name="t_ciru">
+							</div>
+						</div>
+						<div class="vove mas">
+							<div class="item">QUIMIOTERAPIA:
+								<input type="radio" name="quimi" value="si"> SI
+								<input type="radio" name="quimi" value="no"> NO
+							</div>
+							<div class="item">Fecha de Quimio:
+								<input type="date">
+							</div>
+							<div class="item">Esquema Quimiot.:
+								<input type="text" name="esq_quimi">
+							</div>		
+						</div>
+						<div class="vove">
+							<div class="item">RADIOTERAPIA:
+								<input type="radio" name="radiote" value="si"> SI
+								<input type="radio" name="radiote" value="no"> NO
+							</div>
+							<div class="item">Fecha de Radioterapia:
+								<input type="date">
+							</div>
+							<div class="item">Esquema Rad.:
+								<input type="text" name="esq_quimi">
+							</div>
+						</div>
+						<div class="vove">
+							<div class="item">HOMONOTERAPIA:
+								<input type="radio" name="homono" value="si"> SI 
+								<input type="radio" name="homono" value="no"> NO
+							</div>
+							<div class="item">Fecha de Homono.:
+								<input type="date">
+							</div>
+							<div class="item">Esquema Homono.:
+								<input type="text" name="esq_quimi">
+							</div>
+						</div>			
+					</h3>
+				</div>
+			</fieldset>
+			<div class="botones">
+				<button href="javascript:guardar.save();">GRABAR DATOS</a></button>
+				<button onclick="alert('Esta saliendo del sistema'); open(location, '_self').close(); window.close()">SALIR</button>
+			</div>
+		</form>
+		<br>
+	</div>
+<br>
+
+<!-- <script type="text/javascript"> /*esto es para el popup al hacer click en el boton salir verrrrrrr...............................................................................*/
+	var areYouReallySure = false;
+	function areYouSure() {
+	     if(allowPrompt){
+	         if (!areYouReallySure && true) {
+	             areYouReallySure = true;
+	             var confMessage = "";
+	             return confMessage;
+	         }
+	     }
+	     else{
+	         allowPrompt = true;
+	     }
+	 }
+	var allowPrompt = true;
+	window.onbeforeunload = areYouSure;
+</script> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
