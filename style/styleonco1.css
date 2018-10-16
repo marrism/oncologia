@@ -1,11 +1,6 @@
-h1 {
-	font-size: 70px;
-	font-family: 'Coiny', cursive;
-	text-align: center;
-}
-h3 {
-	font-family: serif;
-	font-size: 15px
+* {
+margin: 0px;
+padding: 0px;
 }
 body{
 	background-image: url(../img/cancer.jpeg);
@@ -21,6 +16,15 @@ fieldset {
     -webkit-border-radius:8px;	
     border-radius:8px;
     margin: 0px;
+}
+h1 {
+	font-size: 70px;
+	font-family: 'Coiny', cursive;
+	text-align: center;
+}
+h3 {
+	font-family: serif;
+	font-size: 15px
 }
 .titulo {
 	text-align: center;
@@ -55,4 +59,8 @@ margin: 20px;
 }
 .mas {
 	align-self: stretch;
+}
+.navbar {
+	background-color: rgba(255, 225, 209, 0.3);
+	border:2px solid rgb(230, 129, 171);
 }

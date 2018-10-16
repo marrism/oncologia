@@ -1,6 +1,6 @@
-body, html {
-	width: 100%;
-	height: 100%;
+* {
+margin: 0px;
+padding: 0px;
 }
 body{
 	background-image: url(../img/cancer.jpeg);
@@ -8,6 +8,14 @@ body{
 	background-size: cover;
 	padding: 0;
 	margin: 0;
+}
+fieldset {
+	background-color: rgba(255, 225, 209, 0.3);
+	padding: 16px;
+	border:2px solid rgb(230, 129, 171);
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;
 }
 h1 {
 	font-size: 60px;
@@ -25,15 +33,6 @@ h3 {
 }
 h4 {
 	font-size: 20px;
-}
-
-fieldset {
-	background-color: rgba(255, 225, 209, 0.3);
-	padding: 16px;
-	border:2px solid rgb(230, 129, 171);
-    -moz-border-radius:8px;
-    -webkit-border-radius:8px;	
-    border-radius:8px;
 }
 .dingreso {
 	text-align: center;
@@ -75,4 +74,7 @@ fieldset {
 .navbar {
 	background-color: rgba(255, 225, 209, 0.3);
 	border:2px solid rgb(230, 129, 171);
+}
+.container {
+	width: 100%;
 }
